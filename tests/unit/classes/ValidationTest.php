@@ -8,6 +8,6 @@ class ValidationTest extends TestCase
 {
     public function testValidate()
     {
-        $this->assertTrue(true);
+        $this->assertTrue(false);
     }
 }
