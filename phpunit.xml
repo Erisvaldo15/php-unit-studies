@@ -6,4 +6,12 @@
          testdox="true"
          stopOnFailure="false"
          >
+    <testsuites>
+        <testsuite name="classes">
+            <directory> tests/unit/classes </directory>
+        </testsuite>
+         <testsuite name="controller">
+            <directory> tests/unit/controller </directory>
+        </testsuite>
+    </testsuites>
 </phpunit>

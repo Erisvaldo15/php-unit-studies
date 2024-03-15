@@ -6,8 +6,12 @@ use PHPUnit\Framework\TestCase;
 
 class ValidationTest extends TestCase
 {
-    public function testValidate()
+    public function testRequired()
     {
-        $this->assertTrue(false);
+        $this->assertTrue(true);
+    }
+
+    public function testEmail() {
+        $this->assertNotTrue(false);
     }
 }

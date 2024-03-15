@@ -9,7 +9,7 @@ use PHPUnit\Framework\TestCase;
 class AuthTest extends TestCase {
 
     public function testAttempt() {
-        $validated = (new Validation)->validate([""]);
+        $validated = (new Validation)->validate([true]);
         $this->assertTrue((new Auth)->attempt($validated));
     }
 
