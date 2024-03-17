@@ -9,8 +9,7 @@ use PHPUnit\Framework\TestCase;
 class AuthTest extends TestCase {
 
     public function testAttempt() {
-        $firstName = filter_var("erís", FILTER_SANITIZE_STRING);
-        $validated = (new Validation)->validate([$firstName]);
+        $validated = (new Validation)->validate([""]);
         $this->assertTrue((new Auth)->attempt($validated));
     }
 
