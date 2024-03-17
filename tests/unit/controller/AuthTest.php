@@ -8,22 +8,13 @@ use PHPUnit\Framework\TestCase;
 
 class AuthTest extends TestCase {
 
-    public function setUp(): void {
-        echo "setUp method it's working. \n";
-    }
-
-    public function tearDown(): void {
-        echo "tearDown method it's working. \n";
-    }
-
     public function testAttempt() {
-        echo "attemp test \n";
-        $validated = (new Validation)->validate([true]);
+        $firstName = filter_var("erís", FILTER_SANITIZE_STRING);
+        $validated = (new Validation)->validate([$firstName]);
         $this->assertTrue((new Auth)->attempt($validated));
     }
 
     public function testLogout() {
-        echo "logout test \n";
         $this->assertTrue(true);
     }
 
