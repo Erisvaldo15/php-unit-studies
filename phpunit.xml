@@ -7,6 +7,10 @@
          stopOnFailure="false"
          displayDetailsOnTestsThatTriggerDeprecations="true"
          >
+    <php>
+        <env name="DATABASE_NAME" value="ecommerce"/>
+        <env name="DATABASE_HOST" value="localhost"/>
+    </php>
     <testsuites>
         <testsuite name="classes">
             <directory> tests/unit/classes </directory>
