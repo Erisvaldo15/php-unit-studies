@@ -1,0 +1,1 @@
+{"version":1,"defects":{"tests\\unit\\app\\classes\\UploadImageTest::test_upload_of_image":8,"tests\\unit\\app\\classes\\UploadImageTest::test_is_valid_image_with_exception":7},"times":{"tests\\unit\\app\\classes\\UploadImageTest::test_upload_of_image":0.212,"tests\\unit\\app\\classes\\UploadImageTest::test_is_valid_image_with_exception":0.007}}
