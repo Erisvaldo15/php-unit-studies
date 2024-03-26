@@ -4,9 +4,9 @@ namespace app\database;
 
 class Insert {
 
-    public function create(string $image): bool {
-        if($image) return true;
+   public function create(array|object $data): bool {
+        if($data) return true; 
         return false;
-    }
+   }
 
 }
